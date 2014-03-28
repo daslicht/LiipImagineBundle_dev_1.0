@@ -14,6 +14,7 @@ class WelcomeController extends Controller
          *
          */
         return $this->render('AcmeDemoBundle:Welcome:index.html.twig', array(
+            //absoulute path to image
             'myImage' => '/bundles/acmedemo/images/welcome-demo.gif'
         ));
     }
