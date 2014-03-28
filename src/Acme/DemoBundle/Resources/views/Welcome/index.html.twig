@@ -1,0 +1,13 @@
+{% extends 'AcmeDemoBundle::layout.html.twig' %}
+
+{% block title %}Symfony - Welcome{% endblock %}
+
+{% block content_header '' %}
+
+{% block content %}
+
+<img src="{{ myImage | imagine_filter('my_thumb') }}" /><br>
+
+    Resulting link :
+    http://symfony.site/media/cache/my_thumb//bundles/acmedemo/images/welcome-demo.gif
+{% endblock %}
